@@ -154,11 +154,11 @@ body {
 
 @font-face {
   font-family: "Zen Dots";
-  src: url(/fonts/Zen_Dots/zendots.ttf);
+  src: url("fonts/Zen_Dots/zendots.ttf");
 }
 @font-face {
   font-family: "Jost";
-  src: url(/fonts/Jost/jost.ttf);
+  src: url("fonts/Jost/jost.ttf");
 }
 .header {
   background: url(../img/fon.png) center/cover no-repeat;
