@@ -1,0 +1,971 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background-color: #020B12;
+}
+
+.header__button {
+  background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+  border-radius: 10px;
+  width: 154px;
+  height: 62px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.tc__text1 {
+  font-family: "Zen Dots";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+
+.tc__text2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #BDBFD1;
+}
+
+.names {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.numbers {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #C9C27A;
+}
+
+@font-face {
+  font-family: "Zen Dots";
+  src: url(/fonts/Zen_Dots/);
+}
+@font-face {
+  font-family: "Jost";
+  src: url(/fonts/Jost/);
+}
+.header {
+  background: url(/img/fon.png) center/cover no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1470px;
+  padding: 0px 120px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  padding-top: 62px;
+  padding-bottom: 30px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 73px;
+     -moz-column-gap: 73px;
+          column-gap: 73px;
+  padding-top: 30px;
+  padding-left: 400px;
+  padding-right: 100px;
+}
+
+.menu__item {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.menu__link {
+  color: #FFFFFF;
+}
+
+.header__button {
+  margin-top: 30px;
+}
+
+.header__text1 {
+  font-family: "Zen Dots";
+  font-style: normal;
+  font-size: 74px;
+  line-height: 108px;
+  color: #FFFFFF;
+  padding-top: 161px;
+}
+
+.header__text2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #BDBFD1;
+  padding-top: 16px;
+}
+
+.flex__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 41px;
+     -moz-column-gap: 41px;
+          column-gap: 41px;
+  padding-top: 60px;
+}
+
+.header__button2 {
+  width: 163px;
+  height: 62px;
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #C3181F;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.flex__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+  padding-top: 60px;
+}
+
+.text__flex1 {
+  margin-left: 30px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0px;
+  color: #FFFFFF;
+}
+
+.text__flex2 {
+  margin-left: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
+  color: #BDBFD1;
+}
+
+.top__creator {
+  text-align: center;
+}
+
+.tc__text1 {
+  padding-top: 156px;
+}
+
+.tc__text2 {
+  padding-top: 16px;
+  padding-bottom: 34px;
+}
+
+.top__faces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.face {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #E9E9EF;
+  border-radius: 10px;
+  padding: 15px 65px 13px 22px;
+}
+
+.fc__name {
+  text-align: left;
+}
+
+.avi {
+  padding-right: 18px;
+}
+
+.tc__button {
+  width: 163px;
+  height: 62px;
+  margin-top: 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #C3181F;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.most__collection {
+  text-align: center;
+}
+
+.mc__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 64px;
+}
+
+.main__card {
+  position: relative;
+  text-align: center;
+}
+
+.card1 {
+  border-radius: 20px;
+}
+
+.text__card1 {
+  position: absolute;
+  text-align: left;
+  top: 357px;
+  left: 22px;
+}
+
+.collection__name {
+  font-family: "Zen Dots";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+
+.author__name {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.mc__button {
+  margin-left: 66px;
+  width: 154px;
+  height: 52px;
+  background: #0F4CA5;
+  border-radius: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.firstcard__undergraund {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 17px;
+}
+
+.undergraund__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 80px;
+}
+
+.left__but {
+  width: 81px;
+  height: 81px;
+  background: #E9E9EF;
+  border-radius: 70px;
+  margin-right: 20px;
+}
+
+.right__but {
+  width: 81px;
+  height: 81px;
+  background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+  border-radius: 70px;
+  margin-left: 20px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 130px;
+  padding-bottom: 100px;
+}
+
+.text__under1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #9093B1;
+  margin-top: 30px;
+}
+
+.text__under {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #9093B1;
+  margin-top: 30px;
+}
+
+.link {
+  margin-top: 30px;
+}
+
+.main__info {
+  font-family: "Zen Dots";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 930px;
+    padding: 0px 90px;
+  }
+  .menu__list {
+    -webkit-column-gap: 34px;
+       -moz-column-gap: 34px;
+            column-gap: 34px;
+    padding-top: 42px;
+    padding-left: 0px;
+    padding-right: 65px;
+  }
+  .logo {
+    width: 40%;
+  }
+  .header__button {
+    margin-top: 42px;
+  }
+  .header__text1 {
+    padding-top: 30px;
+    line-height: 90px;
+  }
+  .header__text2 {
+    font-size: 16px;
+    line-height: 27px;
+    color: #BDBFD1;
+    padding-top: 14px;
+  }
+  .flex__button {
+    -webkit-column-gap: 41px;
+       -moz-column-gap: 41px;
+            column-gap: 41px;
+    padding-top: 20px;
+  }
+  .header__button2 {
+    margin-top: 42px;
+  }
+  .flex__text {
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
+    padding-top: 40px;
+  }
+  .tc__text1 {
+    padding-top: 86px;
+  }
+  .top__faces {
+    margin-top: 8px;
+  }
+  .face {
+    border-radius: 10px;
+    padding: 10px 5px 8px 8px;
+    margin-right: 8px;
+  }
+  .avi {
+    padding-right: 13px;
+  }
+  .names {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .numbers {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tr {
+    width: 10%;
+    height: 10%;
+  }
+  .tc__button {
+    margin-top: 55px;
+  }
+  .tc__text2 {
+    font-size: 16px;
+  }
+  .mc__cards {
+    margin-top: 14px;
+  }
+  .card1 {
+    width: 90%;
+  }
+  .card2 {
+    width: 90%;
+  }
+  .card3 {
+    width: 90%;
+  }
+  .text__card1 {
+    top: 247px;
+    left: 28px;
+  }
+  .collection__name {
+    font-size: 20px;
+  }
+  .firstcard__undergraund {
+    padding-top: 0px;
+  }
+  .author__name {
+    font-size: 14px;
+  }
+  .mc__button {
+    width: 110px;
+    height: 38px;
+    margin-left: 26px;
+    font-size: 14px;
+  }
+  .undergraund__buttons {
+    padding-top: 40px;
+  }
+  .left__but {
+    width: 60px;
+    height: 60px;
+  }
+  .right__but {
+    width: 60px;
+    height: 60px;
+  }
+  .header__img {
+    margin-top: 10px;
+    width: 45%;
+  }
+  .text__under {
+    line-height: 8px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .link {
+    width: 90%;
+  }
+  .main__info {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 425px;
+    padding: 0px 0px;
+  }
+  .menu__list {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    padding-top: 40px;
+    padding-left: 0px;
+    padding-right: 40px;
+  }
+  .logo {
+    width: 180px;
+  }
+  .menu__item {
+    font-size: 14px;
+    line-height: 2px;
+  }
+  .header__button {
+    width: 104px;
+    height: 32px;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .header__text1 {
+    font-size: 54px;
+    line-height: 58px;
+    padding-top: 0px;
+  }
+  .header__text2 {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .flex__button {
+    -webkit-column-gap: 56px;
+       -moz-column-gap: 56px;
+            column-gap: 56px;
+    padding-top: 0px;
+  }
+  .header__button2 {
+    width: 104px;
+    height: 32px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .flex__text {
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
+    padding-top: 30px;
+  }
+  .text__flex1 {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .text__flex2 {
+    margin-left: 6px;
+    font-size: 11px;
+  }
+  .tc__text1 {
+    font-size: 32px;
+    padding-top: 64px;
+  }
+  .tc__text2 {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 34px;
+  }
+  .face {
+    padding: 0px 2px 0px 0px;
+  }
+  .avi {
+    padding: 10px 6px;
+  }
+  .names {
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .numbers {
+    font-size: 10px;
+    line-height: 23px;
+  }
+  .tc__button {
+    width: 124px;
+    height: 52px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .mc__cards {
+    margin-top: 4px;
+  }
+  .text__card1 {
+    top: 140px;
+    left: 14px;
+  }
+  .collection__name {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .author__name {
+    font-size: 12px;
+    line-height: 10px;
+    width: 60px;
+  }
+  .mc__button {
+    margin-left: 0px;
+    width: 84px;
+    height: 22px;
+    font-size: 12px;
+  }
+  .undergraund__buttons {
+    padding-top: 20px;
+  }
+  .left__but {
+    width: 41px;
+    height: 41px;
+  }
+  .right__but {
+    width: 41px;
+    height: 41px;
+  }
+  .info {
+    margin-top: 60px;
+    padding-bottom: 40px;
+  }
+  .text__under1 {
+    font-size: 11px;
+    line-height: 23px;
+    margin-top: 10px;
+    width: 150px;
+  }
+  .logotip {
+    width: 150px;
+  }
+  .text__under {
+    font-size: 11px;
+    line-height: 23px;
+    margin-top: 0px;
+  }
+  .link {
+    margin-top: 20px;
+    width: 60%;
+  }
+  .main__info {
+    font-size: 12px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 426px) and (min-width: 320px) {
+  .container {
+    max-width: 305px;
+  }
+  .menu__list {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .logo {
+    padding-top: 33px;
+    width: 180px;
+  }
+  .menu__item {
+    font-size: 12px;
+    line-height: 2px;
+  }
+  .header__button {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .header__text1 {
+    font-size: 34px;
+    line-height: 38px;
+    padding-top: 0px;
+  }
+  .header__text2 {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  .flex__button {
+    -webkit-column-gap: 26px;
+       -moz-column-gap: 26px;
+            column-gap: 26px;
+    padding-top: 0px;
+  }
+  .header__button {
+    margin-top: 10px;
+    width: 86px;
+    height: 32px;
+  }
+  .header__button2 {
+    width: 86px;
+    height: 32px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .flex__text {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    padding-top: 20px;
+  }
+  .text__flex1 {
+    margin-left: 16px;
+    font-size: 12px;
+  }
+  .text__flex2 {
+    line-height: 1px;
+    margin-left: 6px;
+    font-size: 8px;
+  }
+  .tc__text1 {
+    font-size: 26px;
+    padding-top: 44px;
+    line-height: 32px;
+  }
+  .tc__text2 {
+    font-size: 8px;
+    line-height: 20px;
+    padding-top: 0px;
+    padding-bottom: 24px;
+  }
+  .face {
+    padding: 0px 0px 0px 0px;
+  }
+  .top__faces {
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  .avi {
+    width: 32px;
+    padding: 10px 4px;
+    padding-left: 2px;
+  }
+  .tr {
+    display: none;
+  }
+  .names {
+    font-size: 8px;
+    line-height: 0px;
+    padding-right: 1px;
+  }
+  .fc__numbers {
+    line-height: 10px;
+  }
+  .numbers {
+    font-size: 6px;
+    line-height: 0px;
+  }
+  .tc__button {
+    width: 86px;
+    height: 32px;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .mc__cards {
+    margin-top: 0px;
+  }
+  .text__card1 {
+    top: 100px;
+    left: 14px;
+  }
+  .collection__name {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .author__name {
+    font-size: 8px;
+    line-height: 8px;
+    width: 40px;
+  }
+  .mc__button {
+    margin-left: 4px;
+    width: 52px;
+    height: 20px;
+    font-size: 8px;
+    line-height: 13px;
+  }
+  .undergraund__buttons {
+    padding-top: 20px;
+  }
+  .left__but {
+    width: 31px;
+    height: 31px;
+    margin-right: 10px;
+  }
+  .right__but {
+    width: 31px;
+    height: 31px;
+    margin-left: 10px;
+  }
+  .strelka1 {
+    width: 30%;
+    padding-top: 2px;
+  }
+  .strelka2 {
+    width: 30%;
+    padding-top: 2px;
+  }
+  .info {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+  .text__under1 {
+    font-size: 7px;
+    line-height: 23px;
+    margin-top: 10px;
+    width: 150px;
+  }
+  .logotip {
+    width: 90px;
+    margin-top: 6px;
+  }
+  .text__under {
+    font-size: 7px;
+    line-height: 23px;
+    margin-top: 0px;
+  }
+  .link {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .main__info {
+    font-size: 8px;
+    line-height: 42px;
+  }
+}
